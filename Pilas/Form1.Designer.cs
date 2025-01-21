@@ -69,6 +69,7 @@
             this.btn_Apilar.TabIndex = 3;
             this.btn_Apilar.Text = "Apilar";
             this.btn_Apilar.UseVisualStyleBackColor = true;
+            this.btn_Apilar.Click += new System.EventHandler(this.btn_Apilar_Click);
             // 
             // btn_Desapilar
             // 
@@ -78,6 +79,7 @@
             this.btn_Desapilar.TabIndex = 4;
             this.btn_Desapilar.Text = "Desapilar";
             this.btn_Desapilar.UseVisualStyleBackColor = true;
+            this.btn_Desapilar.Click += new System.EventHandler(this.btn_Desapilar_Click);
             // 
             // btn_Vistazo
             // 
@@ -87,6 +89,7 @@
             this.btn_Vistazo.TabIndex = 5;
             this.btn_Vistazo.Text = "Vistazo";
             this.btn_Vistazo.UseVisualStyleBackColor = true;
+            this.btn_Vistazo.Click += new System.EventHandler(this.btn_Vistazo_Click);
             // 
             // btn_Elementos
             // 
@@ -96,6 +99,7 @@
             this.btn_Elementos.TabIndex = 6;
             this.btn_Elementos.Text = "Cantidad de elementos";
             this.btn_Elementos.UseVisualStyleBackColor = true;
+            this.btn_Elementos.Click += new System.EventHandler(this.btn_Elementos_Click);
             // 
             // btn_Limpiar
             // 
@@ -105,6 +109,7 @@
             this.btn_Limpiar.TabIndex = 7;
             this.btn_Limpiar.Text = "Limpiar";
             this.btn_Limpiar.UseVisualStyleBackColor = true;
+            this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
             // 
             // listBoxNombre
             // 
@@ -130,6 +135,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

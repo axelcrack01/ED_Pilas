@@ -20,9 +20,32 @@ namespace Pilas {
         public void mostrar(ListBox list) {
             Nodo actual = cima;
             while (actual!=null) {
-               list.Items.Add(actual.Nombre);
+                list.Items.Add(actual.Nombre);
                 actual = actual.Siguiente;
             }
+        }
+        public string pop() {
+            if (cima!=null) {
+              string nom = cima.Nombre;
+                cima = cima.Siguiente;
+                contador--;
+                return nom;
+            }
+            return null;
+        }
+
+        public int contar() {
+            return contador;
+        }
+        public string peek() {
+            if (cima!=null) {
+                return cima.Nombre;
+            }
+            return null;
+        }
+        public void Clear() {
+            cima = null;
+            contador = 0;
         }
     }
 }
